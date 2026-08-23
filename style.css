@@ -1,0 +1,159 @@
+.know-more-btn .arrow {
+  margin-left: 8px;
+  font-size: 1.1em;
+  vertical-align: middle;
+  transition: margin-left 0.2s;
+}
+.know-more-btn:hover .arrow {
+  margin-left: 14px;
+}
+/* Know More button styling */
+.know-more-btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 10px 28px;
+  background-color: teal;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  cursor: pointer;
+}
+.know-more-btn:hover {
+  background-color: #008080cc;
+}
+/* Circular profile image with teal border */
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid teal;
+  display: block;
+  margin: 0 auto 20px auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+/* Modified CSS with Pink, Teal, and Cream color theme */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background:   #fff9f4;  /* Cream background */
+  color: #0a5f5f;       /* Teal text */
+  overflow-x: hidden;
+}
+
+/* Blur nav bar */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(64, 197, 197, 0.7); /* translucent teal */
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(10, 95, 95, 0.2);
+}
+
+nav ul {
+  margin: 0;
+  padding: 0 50px 0 0;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: #0a5f5f;  /* Teal */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #40c5c5;  /* Lighter teal/pinkish hover */
+}
+
+header, main, footer {
+  padding: 6rem 2rem 2rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+footer {
+  text-align: center;
+  color: #6ca0a0;           /* Subtle teal for footer */
+  font-size: 0.9rem;
+  padding: 2rem;
+  border-top: 1px solid #d9e4e4;  /* Creamy light border */
+  margin-top: 3rem;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Remove margin from first paragraph on pages */
+main p:first-of-type {
+  margin-top: 0;
+}
+
+/* Unique page container styles for distinct look */
+.home-hero {
+  color: #40c5c5;      /* Brighter teal for hero */
+  text-align: center;
+}
+
+.about-content, .blog-content, .project-content {
+  color: #0a5f5f;
+  line-height: 1.6;
+}
+
+.blog-posts {
+  margin-top: 1rem;
+}
+
+.project-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.project-list li {
+  margin-bottom: 1rem;
+  border: 1px solid #d9e4e4;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #daf4f4;     /* Very light teal/cream background */
+  transition: background 0.3s ease;
+}
+
+.project-list li:hover {
+  background: #a7dadada;   /* Lighter teal on hover */
+}
+
+/* Responsive nav for smaller screens */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.8rem;
+  }
+}
